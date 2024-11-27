@@ -2,6 +2,7 @@ package com.Lennox.ScubaGearPicker.controller;
 
 import com.Lennox.ScubaGearPicker.model.Part;
 import com.Lennox.ScubaGearPicker.service.PartService;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,4 +25,5 @@ public class PartController {
     public Optional<List<Part>> getAllPartsByCategory(@PathVariable String category) {
         return partService.findAllByCategory(category);
     }
+    
 }
