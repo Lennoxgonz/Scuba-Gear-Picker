@@ -21,7 +21,7 @@ public class PartController {
         this.partService = partService;
     }
 
-    @GetMapping("/all")
+    @GetMapping("")
     public List<Part> getAllParts() {
         return partService.findAll();
     }

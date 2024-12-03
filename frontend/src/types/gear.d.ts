@@ -1,0 +1,10 @@
+export interface Gear {
+    id: number;
+    name: string;
+    brand: string;
+    subCategory?: string;
+    price: string;
+    purchaseURL: string;
+    imageURL: string;
+    identifier: string;
+}
