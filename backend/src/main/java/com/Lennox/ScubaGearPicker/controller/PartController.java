@@ -21,8 +21,18 @@ public class PartController {
         this.partService = partService;
     }
 
+    @GetMapping("/all")
+    public List<Part> getAllParts() {
+        return partService.findAll();
+    }
+
+    @GetMapping("/identifier/{identifier}")
+    public Optional<Part> getPartByIdentifier(@PathVariable String identifier) {
+        return partService.findByIdentifier(identifier);
+    }
+
     @GetMapping("/category/{category}")
-    public Optional<List<Part>> getAllPartsByCategory(@PathVariable String category) {
+    public List<Part> getAllPartsByCategory(@PathVariable String category) {
         return partService.findAllByCategory(category);
     }
     

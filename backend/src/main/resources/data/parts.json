@@ -1,12 +1,110 @@
-[
-  {
-    "name": "Pure SLS BCD",
-    "brand": "Mares",
-    "category": "bcd",
-    "subCategory": "backInflated",
-    "price": "159",
-    "purchaseURL": "https://www.scuba.com/p-mrspursmd/mares-pure-sls-bcd-medium-black",
-    "imageURL": "https://www.scuba.com/Image/Product/Large/MRSPURS_Color-Black.jpg",
-    "identifier": "mares-pure-sls-BCD"
-  }
-]
+{
+  "masks": [
+    {
+      "name": "Ino Pro Mask",
+      "brand": "Tusa",
+      "category": "mask",
+      "subCategory": "",
+      "price": "127",
+      "purchaseURL": "https://www.scuba.com/p-tbtipmbb/tusa-ino-pro-mask-fishtail-blue-black-silicone",
+      "imageURL": "https://www.scuba.com/Image/Product/Large/TBTIPM_1_Color-Fishtail%20Blue~Black%20Silicone.jpg",
+      "identifier": "tusa-ino-pro-mask"
+    }
+  ],
+  "snorkels": [
+    {
+      "name": "Island 2.0 Snorkel ",
+      "brand": "Cressi",
+      "category": "snorkel",
+      "subCategory": "",
+      "price": "10",
+      "purchaseURL": "https://www.scuba.com/p-csbsi2bby/cressi-island-20-snorkel-black-black-yellow",
+      "imageURL": "https://www.scuba.com/Image/Product/Large/CSBSI2BBY.jpg",
+      "identifier": "cressi-island-2.0-snorkel"
+    }
+  ],
+  "bcds": [
+    {
+      "name": "Pure SLS BCD",
+      "brand": "Mares",
+      "category": "bcd",
+      "subCategory": "backInflated",
+      "price": "159",
+      "purchaseURL": "https://www.scuba.com/p-mrspursmd/mares-pure-sls-bcd-medium-black",
+      "imageURL": "https://www.scuba.com/Image/Product/Large/MRSPURS_Color-Black.jpg",
+      "identifier": "mares-pure-sls-BCD"
+    }
+  ],
+  "tanks/valves": [
+    {
+      "name": "",
+      "brand": "",
+      "category": "tanks/valve",
+      "subCategory": "",
+      "price": "",
+      "purchaseURL": "",
+      "imageURL": "",
+      "identifier": ""
+    }
+  ],
+  "regulators": [
+    {
+      "name": "",
+      "brand": "",
+      "category": "regulator",
+      "subCategory": "",
+      "price": "",
+      "purchaseURL": "",
+      "imageURL": "",
+      "identifier": ""
+    }
+  ],
+  "diveComputers": [
+    {
+      "name": "",
+      "brand": "",
+      "category": "diveComputer",
+      "subCategory": "",
+      "price": "",
+      "purchaseURL": "",
+      "imageURL": "",
+      "identifier": ""
+    }
+  ],
+  "fins": [
+    {
+      "name": "",
+      "brand": "",
+      "category": "fin",
+      "subCategory": "",
+      "price": "",
+      "purchaseURL": "",
+      "imageURL": "",
+      "identifier": ""
+    }
+  ],
+  "gauges/compasses": [
+    {
+      "name": "",
+      "brand": "",
+      "category": "gauge/compass",
+      "subCategory": "",
+      "price": "",
+      "purchaseURL": "",
+      "imageURL": "",
+      "identifier": ""
+    }
+  ],
+  "weights/belts": [
+    {
+      "name": "",
+      "brand": "",
+      "category": "weight/belt",
+      "subCategory": "",
+      "price": "",
+      "purchaseURL": "",
+      "imageURL": "",
+      "identifier": ""
+    }
+  ]
+}

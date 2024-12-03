@@ -20,7 +20,16 @@ public class PartService {
         partRepository.saveAll(parts);
     }
 
-    public Optional<List<Part>> findAllByCategory(String category) {
+    public List<Part> findAll() {
+        return partRepository.findAll();
+    }
+
+    public List<Part> findAllByCategory(String category) {
         return partRepository.findAllByCategory(category);
     }
+
+    public Optional<Part> findByIdentifier(String identifier) {
+        return partRepository.findByIdentifier(identifier);
+    }
+
 }
