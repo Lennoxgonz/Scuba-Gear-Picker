@@ -37,7 +37,7 @@
   ],
   "tanks/valves": [
     {
-      "name": "",
+      "name": "x",
       "brand": "",
       "category": "tanks/valve",
       "subCategory": "",
@@ -49,7 +49,7 @@
   ],
   "regulators": [
     {
-      "name": "",
+      "name": "x",
       "brand": "",
       "category": "regulator",
       "subCategory": "",
@@ -61,7 +61,7 @@
   ],
   "diveComputers": [
     {
-      "name": "",
+      "name": "x",
       "brand": "",
       "category": "diveComputer",
       "subCategory": "",
@@ -73,7 +73,7 @@
   ],
   "fins": [
     {
-      "name": "",
+      "name": "x",
       "brand": "",
       "category": "fin",
       "subCategory": "",
@@ -85,7 +85,7 @@
   ],
   "gauges/compasses": [
     {
-      "name": "",
+      "name": "x",
       "brand": "",
       "category": "gauge/compass",
       "subCategory": "",
@@ -97,7 +97,7 @@
   ],
   "weights/belts": [
     {
-      "name": "",
+      "name": "x",
       "brand": "",
       "category": "weight/belt",
       "subCategory": "",

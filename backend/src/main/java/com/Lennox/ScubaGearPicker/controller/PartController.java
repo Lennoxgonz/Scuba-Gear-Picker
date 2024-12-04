@@ -3,10 +3,7 @@ package com.Lennox.ScubaGearPicker.controller;
 import com.Lennox.ScubaGearPicker.model.Part;
 import com.Lennox.ScubaGearPicker.service.PartService;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,6 +18,7 @@ public class PartController {
         this.partService = partService;
     }
 
+    @CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
     @GetMapping("")
     public List<Part> getAllParts() {
         return partService.findAll();
