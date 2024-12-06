@@ -18,7 +18,7 @@ public class PartController {
         this.partService = partService;
     }
 
-    @CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+    @CrossOrigin(origins = "https://5173-lennoxgonz-scubagearpic-n1mewptafig.ws-us117.gitpod.io", allowCredentials = "true")
     @GetMapping("")
     public List<Part> getAllParts() {
         return partService.findAll();

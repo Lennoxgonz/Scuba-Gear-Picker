@@ -19,7 +19,6 @@ public class JsonDataLoader implements CommandLineRunner {
 
     private final PartService partService;
 
-    @Autowired
     public JsonDataLoader(PartService partService) {
         this.partService = partService;
     }
@@ -36,7 +35,7 @@ public class JsonDataLoader implements CommandLineRunner {
             loadCategory(mapper, rootNode, "masks", allParts);
             loadCategory(mapper, rootNode, "snorkels", allParts);
             loadCategory(mapper, rootNode, "bcds", allParts);
-            loadCategory(mapper, rootNode, "tanks/valves", allParts);
+            loadCategory(mapper, rootNode, "tanks", allParts);
             loadCategory(mapper, rootNode, "regulators", allParts);
             loadCategory(mapper, rootNode, "diveComputers", allParts);
             loadCategory(mapper, rootNode, "fins", allParts);

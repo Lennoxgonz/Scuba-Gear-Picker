@@ -42,7 +42,7 @@ function GearPage() {
             <h1>All Gear</h1>
             <Row>
                 {gearItems.map((item) => (
-                    <Col>
+                    <Col key={item.id}>
                         <GearCard gear={item}/>
                     </Col>
                 ))}
