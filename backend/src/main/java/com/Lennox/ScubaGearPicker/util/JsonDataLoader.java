@@ -5,7 +5,6 @@ import com.Lennox.ScubaGearPicker.service.PartService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -35,12 +34,12 @@ public class JsonDataLoader implements CommandLineRunner {
             loadCategory(mapper, rootNode, "masks", allParts);
             loadCategory(mapper, rootNode, "snorkels", allParts);
             loadCategory(mapper, rootNode, "bcds", allParts);
-            loadCategory(mapper, rootNode, "tanks", allParts);
+            loadCategory(mapper, rootNode, "tanks-valve", allParts);
             loadCategory(mapper, rootNode, "regulators", allParts);
             loadCategory(mapper, rootNode, "diveComputers", allParts);
             loadCategory(mapper, rootNode, "fins", allParts);
-            loadCategory(mapper, rootNode, "gauges/compasses", allParts);
-            loadCategory(mapper, rootNode, "weights/belts", allParts);
+            loadCategory(mapper, rootNode, "gauges-compasses", allParts);
+            loadCategory(mapper, rootNode, "weights-belts", allParts);
 
             partService.saveAll(allParts);
             System.out.println("Parts successfully imported!");

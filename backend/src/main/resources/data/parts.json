@@ -35,11 +35,11 @@
       "identifier": "mares-pure-sls-BCD"
     }
   ],
-  "tanks": [
+  "tanks-valve": [
     {
       "name": "Faber High Pressure Steel Tank 120 CF, 15.3L",
       "brand": "XS Scuba",
-      "category": "tank",
+      "category": "tank-valve",
       "subCategory": "tank",
       "price": "444.00",
       "purchaseURL": "https://www.scuba.com/p-fbrhp120g/xs-scuba-faber-high-pressure-steel-tank-120-cf-153l",
@@ -83,11 +83,11 @@
       "identifier": "scubapro-seawing-nova-open-heel-fins"
     }
   ],
-  "gauges/compasses": [
+  "gauges-compasses": [
     {
       "name": "Mission 2 Gauge Console, Imperial",
       "brand": "Mares",
-      "category": "gauge/compass",
+      "category": "gauge-compass",
       "subCategory": "doubleGauge",
       "price": "149.95",
       "purchaseURL": "https://www.scuba.com/p-mrsm2/mares-mission-2-gauge-console-imperial",
@@ -95,11 +95,11 @@
       "identifier": "mares-mission-2-gauge-console-imperial"
     }
   ],
-  "weights/belts": [
+  "weights-belts": [
     {
       "name": "Black Vinyl Coated Lead Weights",
       "brand": "Sea Pearls",
-      "category": "weight/belt",
+      "category": "weight-belt",
       "subCategory": "weight",
       "price": "9.99-73.99",
       "purchaseURL": "https://www.scuba.com/p-aqulwc1/sea-pearls-black-vinyl-coated-lead-weights-1-lb",
