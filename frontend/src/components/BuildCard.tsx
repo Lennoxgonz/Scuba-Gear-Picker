@@ -8,6 +8,9 @@ import GearSelectionCard from "./GearSelectionCard";
 interface BuildCardProps {
   category: string;
   apiCategory: string;
+  onAddAnother: () => void;
+  onRemove: () => void;
+  canRemove: boolean;
 }
 
 function BuildCard(props: BuildCardProps) {
@@ -42,12 +45,31 @@ function BuildCard(props: BuildCardProps) {
         <Card style={{ width: "18rem" }} className="bg-primary-subtle p-3 m-3">
           <Card.Title className="text-center">{props.category}</Card.Title>
           <Card.Img variant="top" src={selectedGear?.imageURL}></Card.Img>
-          <Card.Text className="mb-0">{selectedGear?.name}</Card.Text>
-          <Card.Text>{selectedGear && <Card.Text>Cost: ${selectedGear?.price}</Card.Text>}</Card.Text>
+          <Card.Text className="mb-0 text-center fw-bold">
+            {selectedGear?.name}
+          </Card.Text>
+          <Card.Text className="mb-0 text-center">
+            {selectedGear && `Cost: $${selectedGear?.price}`}
+          </Card.Text>
+          <Card.Text className="text-center">
+            <a href={selectedGear?.purchaseURL} target="_blank">
+              {selectedGear && "Buy Now"}
+            </a>
+          </Card.Text>
           <Button onClick={handleOpenModal} className="mb-1">
-            Choose Gear/Change Selection
+            {selectedGear ? "Change Selection" : "Choose Gear"}
           </Button>
-          <Button>Add Another</Button>
+          <Button onClick={props.onAddAnother} className="mb-1">
+            Add Another
+          </Button>
+          <Button onClick={() => setSelectedGear(null)} className="mb-1">Reset</Button>
+          <Button
+            onClick={props.onRemove}
+            disabled={!props.canRemove}
+            className="mb-1"
+          >
+            Remove
+          </Button>
         </Card>
       </Container>
       <Modal show={isModalOpen} onHide={handleCloseModal}>
@@ -58,7 +80,7 @@ function BuildCard(props: BuildCardProps) {
           <Row>
             {categoryGear.map((gear) => (
               <Col key={gear.name}>
-                <GearSelectionCard gear={gear} onSelect={handleSelectGear}/>
+                <GearSelectionCard gear={gear} onSelect={handleSelectGear} />
               </Col>
             ))}
           </Row>

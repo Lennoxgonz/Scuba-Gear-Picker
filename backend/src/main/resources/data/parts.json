@@ -5,22 +5,102 @@
       "brand": "Tusa",
       "category": "mask",
       "subCategory": "",
-      "price": "127.00",
+      "price": "159.00",
       "purchaseURL": "https://www.scuba.com/p-tbtipmbb/tusa-ino-pro-mask-fishtail-blue-black-silicone",
       "imageURL": "https://www.scuba.com/Image/Product/Large/TBTIPM_1_Color-Fishtail%20Blue~Black%20Silicone.jpg",
       "identifier": "tusa-ino-pro-mask"
+    },
+    {
+      "name": "M1 Frameless Mask",
+      "brand": "Hollis",
+      "category": "mask",
+      "subCategory": "",
+      "price": "114.95",
+      "purchaseURL": "https://www.scuba.com/p-hlsm1m/hollis-m1-frameless-mask",
+      "imageURL": "https://www.scuba.com/Image/Product/XLarge/HLSM1M.jpg",
+      "identifier": "hollis-m1-frameless-mask"
+    },
+    {
+      "name": "Venom Mask",
+      "brand": "Atomic",
+      "category": "mask",
+      "subCategory": "",
+      "price": "199.95",
+      "purchaseURL": "https://www.scuba.com/p-atmmvnbk/atomic-venom-mask-black-grey",
+      "imageURL": "https://www.scuba.com/Image/Product/XLarge/ATMMVNBK.jpg",
+      "identifier": "atomic-venom-mask"
+    },
+    {
+      "name": "Mares X-Vision Ultra LS Two Window Mask",
+      "brand": "Mares",
+      "category": "mask",
+      "subCategory": "",
+      "price": "124.95",
+      "purchaseURL": "https://www.scuba.com/p-mrsmxlnbkgy/mares-x-vision-ultra-ls-two-window-mask-black-gray",
+      "imageURL": "https://www.scuba.com/Image/Product/XLarge/MRSMXLN_Color-Black~Gray.jpg",
+      "identifier": "mares-x-vision-ultra-ls-two-window-mask"
+    },
+    {
+      "name": "Paragon S Mask",
+      "brand": "TUSA",
+      "category": "mask",
+      "subCategory": "",
+      "price": "220.00",
+      "purchaseURL": "https://www.scuba.com/p-tbtmpsrwt/tusa-paragon-s-mask-black-white",
+      "imageURL": "https://www.scuba.com/Image/Product/XLarge/TBTMPSM_Color-Black~White.jpg",
+      "identifier": "tusa-paragon-s-mask"
     }
   ],
   "snorkels": [
     {
-      "name": "Island 2.0 Snorkel ",
+      "name": "Island 2.0 Snorkel",
       "brand": "Cressi",
       "category": "snorkel",
       "subCategory": "",
-      "price": "10.00",
+      "price": "9.95",
       "purchaseURL": "https://www.scuba.com/p-csbsi2bby/cressi-island-20-snorkel-black-black-yellow",
       "imageURL": "https://www.scuba.com/Image/Product/Large/CSBSI2BBY.jpg",
       "identifier": "cressi-island-2.0-snorkel"
+    },
+    {
+      "name": "SV2 Semi-Dry Snorkel",
+      "brand": "Atomic",
+      "category": "snorkel",
+      "subCategory": "",
+      "price": "79.95",
+      "purchaseURL": "https://www.scuba.com/p-atmssv2aq/atomic-sv2-semi-dry-snorkel-black-aqua",
+      "imageURL": "https://www.scuba.com/Image/Product/XLarge/ATMSSV2AQ.jpg",
+      "identifier": "atomic-sv2-semi-dry-snorkel"
+    },
+    {
+      "name": "Nexus Snorkel",
+      "brand": "Scubapro",
+      "category": "snorkel",
+      "subCategory": "",
+      "price": "75.00",
+      "purchaseURL": "https://www.scuba.com/p-scpsnbk/scubapro-nexus-snorkel-black",
+      "imageURL": "https://www.scuba.com/Image/Product/XLarge/SCPSN.jpg",
+      "identifier": "scubapro-nexus-snorkel"
+    },
+    {
+      "name": "Hyperdry Elite II Snorkel",
+      "brand": "TUSA",
+      "category": "snorkel",
+      "subCategory": "",
+      "price": "65.00",
+      "purchaseURL": "https://www.scuba.com/p-tbts101abk/tusa-hyperdry-elite-ii-snorkel-all-black",
+      "imageURL": "https://www.scuba.com/Image/Product/XLarge/TBTS101_6.jpg",
+      "identifier": "tusa-hyperdry-elite-ii-snorkel"
+    },
+    {
+      "name": "Alpha Ultra Dry Snorkel",
+      "brand": "Cressi",
+      "category": "snorkel",
+      "subCategory": "",
+      "price": "39.95",
+      "purchaseURL": "https://www.scuba.com/p-csbsaldbk/cressi-alpha-ultra-dry-snorkel-all-black",
+      "imageURL": "https://www.scuba.com/Image/Product/XLarge/CSBSALDBK.jpg",
+      "identifier": "cress"
     }
   ],
   "bcds": [
