@@ -39,7 +39,7 @@ function GearPage() {
 
     return (
         <Container>
-            <h1>All Gear</h1>
+            <h1 className="test">All Gear</h1>
             <Row>
                 {gearItems.map((item) => (
                     <Col key={item.id}>

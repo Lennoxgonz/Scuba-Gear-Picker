@@ -4,7 +4,9 @@ import { CategoryMapping } from "../types/categoryMapping";
 import { useState } from "react";
 
 function BuildCards() {
-  const [categoryQuantities, setCategoryQuantities] = useState<{ [key: string]: number }>({
+  const [categoryQuantities, setCategoryQuantities] = useState<{
+    [key: string]: number;
+  }>({
     mask: 1,
     snorkel: 1,
     bcd: 1,
@@ -29,31 +31,31 @@ function BuildCards() {
   ];
 
   const handleAddCard = (categoryApi: string) => {
-    setCategoryQuantities(prev => ({
+    setCategoryQuantities((prev) => ({
       ...prev,
-      [categoryApi]: prev[categoryApi] + 1
+      [categoryApi]: prev[categoryApi] + 1,
     }));
   };
 
   const handleRemoveCard = (categoryApi: string) => {
-    setCategoryQuantities(prev => {
+    setCategoryQuantities((prev) => {
       if (prev[categoryApi] > 1) {
         return {
           ...prev,
-          [categoryApi]: prev[categoryApi] - 1
+          [categoryApi]: prev[categoryApi] - 1,
         };
       }
-      return prev; 
+      return prev;
     });
   };
 
   return (
-    <Row className="g-0">
-      {categories.map((category) => (
+    <Row className="g-1">
+      {categories.map((category) =>
         Array(categoryQuantities[category.api])
           .fill(null)
           .map((_, index) => (
-            <Col key={`${category.api}-${index}`}>
+            <Col xs={12} md={6} lg={4} key={`${category.api}-${index}`}>
               <BuildCard
                 category={category.display}
                 apiCategory={category.api}
@@ -63,9 +65,9 @@ function BuildCards() {
               />
             </Col>
           ))
-      ))}
+      )}
     </Row>
   );
 }
 
-export default BuildCards
+export default BuildCards;

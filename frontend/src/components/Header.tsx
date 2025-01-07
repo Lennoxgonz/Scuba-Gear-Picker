@@ -7,8 +7,7 @@ function Header() {
         <Navbar 
             expand="lg" 
             variant="dark" 
-            style={{ backgroundColor: '#2A9FD6' }} 
-            className="py-3 shadow-sm"
+            className="header py-3 shadow-sm"
         >
             <Container>
                 <Navbar.Brand href="/" className="fw-bold fs-4">

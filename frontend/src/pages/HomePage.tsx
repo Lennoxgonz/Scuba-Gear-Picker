@@ -1,4 +1,9 @@
-import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button} from 'react-bootstrap';
+import diverImg from "../assets/images/diver-selfie-underwater.jpg"
+import diveMaskImg from "../assets/images/dive-mask.png"
+import diveRegulatorImg from "../assets/images/dive-regulator.jpg"
+import diveComputerImg from "../assets/images/dive-computer.jpg"
+
 
 function HomePage() {
     return (
@@ -15,10 +20,9 @@ function HomePage() {
                             </Button>
                         </Col>
                         <Col md={6} className="mt-4 mt-md-0">
-                            {/* Placeholder for hero image */}
                             <img 
-                                src="" 
-                                alt="Diving Equipment Picture" 
+                                src={diverImg}
+                                alt="Underwater diver picture" 
                                 className="img-fluid rounded-3 shadow"
                             />
                         </Col>
@@ -32,7 +36,7 @@ function HomePage() {
                 <Row>
                     <Col md={4} className="mb-4">
                         <Card className="h-100 shadow-sm">
-                            <Card.Img variant="top" src="" alt="Picture of a diving mask" />
+                            <Card.Img variant="top" src={diveMaskImg} alt="Picture of a diving mask" />
                             <Card.Body>
                                 <Card.Title>Diving Masks</Card.Title>
                                 <Card.Text>
@@ -44,7 +48,7 @@ function HomePage() {
                     </Col>
                     <Col md={4} className="mb-4">
                         <Card className="h-100 shadow-sm">
-                            <Card.Img variant="top" src="/placeholder-regulator.jpg" />
+                            <Card.Img variant="top" src={diveRegulatorImg} alt="Picture of a diving regulator"/>
                             <Card.Body>
                                 <Card.Title>Regulators</Card.Title>
                                 <Card.Text>
@@ -56,7 +60,7 @@ function HomePage() {
                     </Col>
                     <Col md={4} className="mb-4">
                         <Card className="h-100 shadow-sm">
-                            <Card.Img variant="top" src="/placeholder-computer.jpg" />
+                            <Card.Img variant="top" src={diveComputerImg} alt="Picture of a dive computer"/>
                             <Card.Body>
                                 <Card.Title>Dive Computers</Card.Title>
                                 <Card.Text>
