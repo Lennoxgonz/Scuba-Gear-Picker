@@ -9,7 +9,7 @@ function HomePage() {
     return (
         <>
             {/* Hero Section */}
-            <Container fluid className="bg-primary text-white py-5">
+            <Container fluid className="home-hero text-white py-5">
                 <Container>
                     <Row className="align-items-center">
                         <Col md={6} className="text-center text-md-start">
@@ -104,7 +104,7 @@ function HomePage() {
             </Container>
 
             {/* Call to Action Section */}
-            <Container fluid className="bg-primary text-white text-center py-5">
+            <Container fluid className="home-footer text-white text-center py-5">
                 <h2 className="mb-4">Ready to Build Your Kit?</h2>
                 <p className="lead mb-4">Start customizing your perfect diving equipment setup today</p>
                 <Button variant="light" size="lg" href="/build">

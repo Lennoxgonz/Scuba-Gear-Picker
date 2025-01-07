@@ -1,13 +1,18 @@
 .navbar.header {
-    background-color: #2A9FD6;
+  background-color: #2a9fd6;
 }
 
 .btn.buy-btn {
-    background-color: #2A9FD6;
+  background-color: #2a9fd6;
 }
 
 .btn.build-btn {
-    background-color: #2A9FD6;
+  background-color: #2a9fd6;
 }
 
-
+.container-fluid.home-hero {
+  background-color: #2180AC;
+}
+.container-fluid.home-footer {
+    background-color: #2180AC;
+}
