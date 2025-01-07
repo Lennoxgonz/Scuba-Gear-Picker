@@ -28,11 +28,11 @@ public class PartController {
     public Optional<Part> getPartByIdentifier(@PathVariable String identifier) {
         return partService.findByIdentifier(identifier);
     }
-    
+
     @CrossOrigin(origins = "https://5173-lennoxgonz-scubagearpic-n1mewptafig.ws-us117.gitpod.io", allowCredentials = "true")
     @GetMapping("/category/{category}")
     public List<Part> getAllPartsByCategory(@PathVariable String category) {
         return partService.findAllByCategory(category);
     }
-    
+
 }

@@ -62,7 +62,9 @@ function BuildCard(props: BuildCardProps) {
           <Button onClick={props.onAddAnother} className="mb-1">
             Add Another
           </Button>
-          <Button onClick={() => setSelectedGear(null)} className="mb-1">Reset</Button>
+          <Button onClick={() => setSelectedGear(null)} className="mb-1">
+            Reset
+          </Button>
           <Button
             onClick={props.onRemove}
             disabled={!props.canRemove}
@@ -72,14 +74,14 @@ function BuildCard(props: BuildCardProps) {
           </Button>
         </Card>
       </Container>
-      <Modal show={isModalOpen} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
+      <Modal size="lg" show={isModalOpen} onHide={handleCloseModal}>
+        <Modal.Header closeButton className="border-bottom-0 pb-0">
           <Modal.Title>{`Choose your ${props.category}`}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Row>
+          <Row className="g-0">
             {categoryGear.map((gear) => (
-              <Col key={gear.name}>
+              <Col key={gear.name} xs={12} md={6} lg={4}>
                 <GearSelectionCard gear={gear} onSelect={handleSelectGear} />
               </Col>
             ))}

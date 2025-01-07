@@ -8,5 +8,6 @@ import java.util.Optional;
 
 public interface PartRepository extends JpaRepository<Part, Long> {
     Optional<Part> findByIdentifier(String identifier);
+
     List<Part> findAllByCategory(String category);
 }

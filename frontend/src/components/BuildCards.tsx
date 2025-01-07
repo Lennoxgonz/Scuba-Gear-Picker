@@ -50,7 +50,6 @@ function BuildCards() {
   return (
     <Row className="g-0">
       {categories.map((category) => (
-        // For each category, render the number of cards specified in categoryQuantities
         Array(categoryQuantities[category.api])
           .fill(null)
           .map((_, index) => (

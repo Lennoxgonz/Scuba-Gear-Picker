@@ -51,7 +51,8 @@ public class JsonDataLoader implements CommandLineRunner {
     private void loadCategory(ObjectMapper mapper, JsonNode rootNode, String category, List<Part> allParts) {
         JsonNode categoryNode = rootNode.get(category);
         if (categoryNode != null && !categoryNode.isEmpty()) {
-            List<Part> categoryParts = mapper.convertValue(categoryNode, new TypeReference<List<Part>>(){});
+            List<Part> categoryParts = mapper.convertValue(categoryNode, new TypeReference<List<Part>>() {
+            });
             allParts.addAll(categoryParts);
             System.out.println("Loaded " + categoryParts.size() + " items from " + category);
         }
