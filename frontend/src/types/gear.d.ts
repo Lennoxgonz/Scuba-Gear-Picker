@@ -4,7 +4,7 @@ export interface Gear {
     brand?: string;
     category?: string;
     subCategory?: string;
-    price?: string;
+    price: string;
     purchaseURL?: string;
     imageURL?: string;
     identifier?: string;

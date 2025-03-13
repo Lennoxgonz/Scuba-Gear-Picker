@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import GearCard from "../components/GearCard";
-import fetchAllGear from "../services/api";
+import { fetchAllGear } from "../services/api";
 import {Gear} from "../types/gear";
 
 function GearPage() {

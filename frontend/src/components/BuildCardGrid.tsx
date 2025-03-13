@@ -3,7 +3,15 @@ import BuildCard from "./BuildCard";
 import { CategoryMapping } from "../types/categoryMapping";
 import { useState } from "react";
 
-function BuildCards() {
+interface BuildCardGridProps {
+  totalCost: number;
+  setTotalCost: (value: number) => void;
+  totalPiecesOfGear: number;
+  setTotalPiecesOfGear: (value: number) => void;
+}
+
+function BuildCardGrid(props: BuildCardGridProps) {
+  // State for how many cards of each category, starts at 1 per category
   const [categoryQuantities, setCategoryQuantities] = useState<{
     [key: string]: number;
   }>({
@@ -18,6 +26,7 @@ function BuildCards() {
     "weight-belt": 1,
   });
 
+  // Mapping for category to display name
   const categories: CategoryMapping[] = [
     { display: "Mask", api: "mask" },
     { display: "Snorkel", api: "snorkel" },
@@ -51,6 +60,7 @@ function BuildCards() {
 
   return (
     <Row className="g-1">
+      {/* For each category render a build card and pass in props */}
       {categories.map((category) =>
         Array(categoryQuantities[category.api])
           .fill(null)
@@ -62,6 +72,10 @@ function BuildCards() {
                 onAddAnother={() => handleAddCard(category.api)}
                 onRemove={() => handleRemoveCard(category.api)}
                 canRemove={categoryQuantities[category.api] > 1}
+                totalCost={props.totalCost}
+                setTotalCost={props.setTotalCost}
+                totalPiecesOfGear={props.totalPiecesOfGear}
+                setTotalPiecesOfGear={props.setTotalPiecesOfGear}
               />
             </Col>
           ))
@@ -70,4 +84,4 @@ function BuildCards() {
   );
 }
 
-export default BuildCards;
+export default BuildCardGrid;

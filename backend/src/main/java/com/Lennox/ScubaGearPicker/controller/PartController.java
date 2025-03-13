@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "https://5173-lennoxgonz-scubagearpic-t5oybvaq8uc.ws-us118.gitpod.io", allowCredentials = "true")
 @RequestMapping("api/parts")
 public class PartController {
 
@@ -18,7 +19,6 @@ public class PartController {
         this.partService = partService;
     }
 
-    @CrossOrigin(origins = "https://5173-lennoxgonz-scubagearpic-n1mewptafig.ws-us117.gitpod.io", allowCredentials = "true")
     @GetMapping("")
     public List<Part> getAllParts() {
         return partService.findAll();
@@ -29,7 +29,6 @@ public class PartController {
         return partService.findByIdentifier(identifier);
     }
 
-    @CrossOrigin(origins = "https://5173-lennoxgonz-scubagearpic-n1mewptafig.ws-us117.gitpod.io", allowCredentials = "true")
     @GetMapping("/category/{category}")
     public List<Part> getAllPartsByCategory(@PathVariable String category) {
         return partService.findAllByCategory(category);
