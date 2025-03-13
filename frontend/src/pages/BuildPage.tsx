@@ -3,7 +3,6 @@ import BuildCardGrid from "../components/BuildCardGrid";
 import { useState } from "react";
 
 function BuildPage() {
-  // State for total build cost and pieces of gear
   const [totalCost, setTotalCost] = useState<number>(0);
   const [totalPiecesOfGear, setTotalPiecesOfGear] = useState<number>(0);
 

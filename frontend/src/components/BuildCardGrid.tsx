@@ -34,7 +34,7 @@ function BuildCardGrid(props: BuildCardGridProps) {
     { display: "Tank/Valve", api: "tank-valve" },
     { display: "Regulator", api: "regulator" },
     { display: "Dive Computer", api: "diveComputer" },
-    { display: "Fins", api: "fins" },
+    { display: "Fins", api: "fin" },
     { display: "Gauge/Compass", api: "gauge-compass" },
     { display: "Weight/Belt", api: "weight-belt" },
   ];
