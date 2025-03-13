@@ -1,0 +1,2 @@
+Add build total functionality
+Add gear sorting functionality
