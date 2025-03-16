@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ScubaGearPickerApplication<ScubaGearPicker>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.Lennox.ScubaGearPicker.ScubaGearPickerApplication",
+            "projectName": "ScubaGearPicker",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

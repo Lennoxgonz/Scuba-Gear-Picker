@@ -1,8 +1,8 @@
 import axios from "axios";
 
-//const API_BASE_URL: string = 'http://localhost:8080/api';
-const API_BASE_URL: string =
-  "https://8080-lennoxgonz-scubagearpic-t5oybvaq8uc.ws-us118.gitpod.io/api";
+const API_BASE_URL: string = 'http://localhost:8080/api';
+//const API_BASE_URL: string =
+//  "https://8080-lennoxgonz-scubagearpic-t5oybvaq8uc.ws-us118.gitpod.io/api";
 
 export async function fetchAllGear() {
   try {
