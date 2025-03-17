@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = "https://5173-lennoxgonz-scubagearpic-t5oybvaq8uc.ws-us118.gitpod.io", allowCredentials = "true")
+@CrossOrigin(origins = {"https://5173-lennoxgonz-scubagearpic-t5oybvaq8uc.ws-us118.gitpod.io", "http://localhost:5173/"}, allowCredentials = "true")
 @RequestMapping("api/parts")
 public class PartController {
 
