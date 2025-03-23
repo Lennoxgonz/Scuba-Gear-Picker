@@ -22,7 +22,7 @@ function Header() {
             <Nav.Link as={Link} to="/gear" className="px-3 fw-medium">
               View Gear
             </Nav.Link>
-            <Nav.Link as={Link} to="/login" className="px-3 fw-medium">
+            <Nav.Link as={Link} to="/signin" className="px-3 fw-medium">
               Sign In
             </Nav.Link>
           </Nav>
