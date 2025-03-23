@@ -1,12 +1,13 @@
-package com.Lennox.ScubaGearPicker.model;
+package com.Lennox.ScubaGearPicker.gear;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
-public class Part {
+public class Gear {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,6 +20,8 @@ public class Part {
     private String purchaseURL;
     private String imageURL;
     private String identifier;
+    @JsonProperty("isPublic")
+    private boolean isPublic;
 
     public long getId() {
         return Id;
@@ -90,6 +93,14 @@ public class Part {
 
     public void setIdentifier(String identifier) {
         this.identifier = identifier;
+    }
+
+    public boolean isPublic() {
+        return isPublic;
+    }
+
+    public void setPublic(boolean isPublic) {
+        this.isPublic = isPublic;
     }
 
 }
