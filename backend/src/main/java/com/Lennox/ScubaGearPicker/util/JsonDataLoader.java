@@ -1,7 +1,7 @@
 package com.Lennox.ScubaGearPicker.util;
 
-import com.Lennox.ScubaGearPicker.model.Part;
-import com.Lennox.ScubaGearPicker.service.PartService;
+import com.Lennox.ScubaGearPicker.gear.Gear;
+import com.Lennox.ScubaGearPicker.gear.GearService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,9 +16,9 @@ import java.util.List;
 @Component
 public class JsonDataLoader implements CommandLineRunner {
 
-    private final PartService partService;
+    private final GearService partService;
 
-    public JsonDataLoader(PartService partService) {
+    public JsonDataLoader(GearService partService) {
         this.partService = partService;
     }
 
@@ -26,7 +26,7 @@ public class JsonDataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         InputStream inputStream = TypeReference.class.getResourceAsStream("/data/parts.json");
-        List<Part> allParts = new ArrayList<>();
+        List<Gear> allParts = new ArrayList<>();
 
         try {
             JsonNode rootNode = mapper.readTree(inputStream);
@@ -48,10 +48,10 @@ public class JsonDataLoader implements CommandLineRunner {
         }
     }
 
-    private void loadCategory(ObjectMapper mapper, JsonNode rootNode, String category, List<Part> allParts) {
+    private void loadCategory(ObjectMapper mapper, JsonNode rootNode, String category, List<Gear> allParts) {
         JsonNode categoryNode = rootNode.get(category);
         if (categoryNode != null && !categoryNode.isEmpty()) {
-            List<Part> categoryParts = mapper.convertValue(categoryNode, new TypeReference<List<Part>>() {
+            List<Gear> categoryParts = mapper.convertValue(categoryNode, new TypeReference<List<Gear>>() {
             });
             allParts.addAll(categoryParts);
             System.out.println("Loaded " + categoryParts.size() + " items from " + category);

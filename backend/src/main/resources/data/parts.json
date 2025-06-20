@@ -8,7 +8,8 @@
       "price": "159.00",
       "purchaseURL": "https://www.scuba.com/p-tbtipmbb/tusa-ino-pro-mask-fishtail-blue-black-silicone",
       "imageURL": "https://www.scuba.com/Image/Product/Large/TBTIPM_1_Color-Fishtail%20Blue~Black%20Silicone.jpg",
-      "identifier": "tusa-ino-pro-mask"
+      "identifier": "tusa-ino-pro-mask",
+      "isPublic": true
     },
     {
       "name": "M1 Frameless Mask",
@@ -18,7 +19,8 @@
       "price": "114.95",
       "purchaseURL": "https://www.scuba.com/p-hlsm1m/hollis-m1-frameless-mask",
       "imageURL": "https://www.scuba.com/Image/Product/XLarge/HLSM1M.jpg",
-      "identifier": "hollis-m1-frameless-mask"
+      "identifier": "hollis-m1-frameless-mask",
+      "isPublic": true
     },
     {
       "name": "Venom Mask",
@@ -28,7 +30,8 @@
       "price": "199.95",
       "purchaseURL": "https://www.scuba.com/p-atmmvnbk/atomic-venom-mask-black-grey",
       "imageURL": "https://www.scuba.com/Image/Product/XLarge/ATMMVNBK.jpg",
-      "identifier": "atomic-venom-mask"
+      "identifier": "atomic-venom-mask",
+      "isPublic": true
     },
     {
       "name": "Mares X-Vision Ultra LS Two Window Mask",
@@ -38,7 +41,8 @@
       "price": "124.95",
       "purchaseURL": "https://www.scuba.com/p-mrsmxlnbkgy/mares-x-vision-ultra-ls-two-window-mask-black-gray",
       "imageURL": "https://www.scuba.com/Image/Product/XLarge/MRSMXLN_Color-Black~Gray.jpg",
-      "identifier": "mares-x-vision-ultra-ls-two-window-mask"
+      "identifier": "mares-x-vision-ultra-ls-two-window-mask",
+      "isPublic": true
     },
     {
       "name": "Paragon S Mask",
@@ -48,7 +52,8 @@
       "price": "220.00",
       "purchaseURL": "https://www.scuba.com/p-tbtmpsrwt/tusa-paragon-s-mask-black-white",
       "imageURL": "https://www.scuba.com/Image/Product/XLarge/TBTMPSM_Color-Black~White.jpg",
-      "identifier": "tusa-paragon-s-mask"
+      "identifier": "tusa-paragon-s-mask",
+      "isPublic": true
     }
   ],
   "snorkels": [
@@ -60,7 +65,8 @@
       "price": "9.95",
       "purchaseURL": "https://www.scuba.com/p-csbsi2bby/cressi-island-20-snorkel-black-black-yellow",
       "imageURL": "https://www.scuba.com/Image/Product/Large/CSBSI2BBY.jpg",
-      "identifier": "cressi-island-2.0-snorkel"
+      "identifier": "cressi-island-2.0-snorkel",
+      "isPublic": true
     },
     {
       "name": "SV2 Semi-Dry Snorkel",
@@ -70,7 +76,8 @@
       "price": "79.95",
       "purchaseURL": "https://www.scuba.com/p-atmssv2aq/atomic-sv2-semi-dry-snorkel-black-aqua",
       "imageURL": "https://www.scuba.com/Image/Product/XLarge/ATMSSV2AQ.jpg",
-      "identifier": "atomic-sv2-semi-dry-snorkel"
+      "identifier": "atomic-sv2-semi-dry-snorkel",
+      "isPublic": true
     },
     {
       "name": "Nexus Snorkel",
@@ -80,7 +87,8 @@
       "price": "75.00",
       "purchaseURL": "https://www.scuba.com/p-scpsnbk/scubapro-nexus-snorkel-black",
       "imageURL": "https://www.scuba.com/Image/Product/XLarge/SCPSN.jpg",
-      "identifier": "scubapro-nexus-snorkel"
+      "identifier": "scubapro-nexus-snorkel",
+      "isPublic": true
     },
     {
       "name": "Hyperdry Elite II Snorkel",
@@ -90,7 +98,8 @@
       "price": "65.00",
       "purchaseURL": "https://www.scuba.com/p-tbts101abk/tusa-hyperdry-elite-ii-snorkel-all-black",
       "imageURL": "https://www.scuba.com/Image/Product/XLarge/TBTS101_6.jpg",
-      "identifier": "tusa-hyperdry-elite-ii-snorkel"
+      "identifier": "tusa-hyperdry-elite-ii-snorkel",
+      "isPublic": true
     },
     {
       "name": "Alpha Ultra Dry Snorkel",
@@ -100,7 +109,8 @@
       "price": "39.95",
       "purchaseURL": "https://www.scuba.com/p-csbsaldbk/cressi-alpha-ultra-dry-snorkel-all-black",
       "imageURL": "https://www.scuba.com/Image/Product/XLarge/CSBSALDBK.jpg",
-      "identifier": "cress"
+      "identifier": "cress",
+      "isPublic": true
     }
   ],
   "bcds": [
@@ -112,7 +122,8 @@
       "price": "159.00",
       "purchaseURL": "https://www.scuba.com/p-mrspursmd/mares-pure-sls-bcd-medium-black",
       "imageURL": "https://www.scuba.com/Image/Product/Large/MRSPURS_Color-Black.jpg",
-      "identifier": "mares-pure-sls-BCD"
+      "identifier": "mares-pure-sls-BCD",
+      "isPublic": true
     }
   ],
   "tanks-valve": [
@@ -124,7 +135,8 @@
       "price": "444.00",
       "purchaseURL": "https://www.scuba.com/p-fbrhp120g/xs-scuba-faber-high-pressure-steel-tank-120-cf-153l",
       "imageURL": "https://www.scuba.com/Image/Product/Large/FBRHP120G.jpg",
-      "identifier": "xs-scuba-faber-high-pressure-steel-tank-120-cf-15.3-l"
+      "identifier": "xs-scuba-faber-high-pressure-steel-tank-120-cf-15.3-l",
+      "isPublic": true
     }
   ],
   "regulators": [
@@ -136,7 +148,8 @@
       "price": "299.95",
       "purchaseURL": "https://www.scuba.com/p-mrspkprgy/mares-prestige-15x-and-prestige-octopus-package-grey",
       "imageURL": "https://www.scuba.com/Image/Product/Large/MRSPKPRGY.jpg",
-      "identifier": "mares-prestige-15x-and-prestige-octopus-package"
+      "identifier": "mares-prestige-15x-and-prestige-octopus-package",
+      "isPublic": true
     }
   ],
   "diveComputers": [
@@ -148,7 +161,8 @@
       "price": "550.00",
       "purchaseURL": "https://www.scuba.com/p-swtpadcde/shearwater-peregrine-dive-computer-adventures-edition-dark",
       "imageURL": "https://www.scuba.com/Image/Product/Large/SWTPDC.jpg",
-      "identifier": "shearwater-peregrine-dive-computer"
+      "identifier": "shearwater-peregrine-dive-computer",
+      "isPublic": true
     }
   ],
   "fins": [
@@ -160,7 +174,8 @@
       "price": "260.00",
       "purchaseURL": "https://www.scuba.com/p-scpfsnwlr/scubapro-seawing-nova-open-heel-fins-white-large",
       "imageURL": "https://www.scuba.com/Image/Product/Large/SCPFSNWMD.jpg",
-      "identifier": "scubapro-seawing-nova-open-heel-fins"
+      "identifier": "scubapro-seawing-nova-open-heel-fins",
+      "isPublic": true
     }
   ],
   "gauges-compasses": [
@@ -172,7 +187,8 @@
       "price": "149.95",
       "purchaseURL": "https://www.scuba.com/p-mrsm2/mares-mission-2-gauge-console-imperial",
       "imageURL": "https://www.scuba.com/Image/Product/Large/MRSM2.jpg",
-      "identifier": "mares-mission-2-gauge-console-imperial"
+      "identifier": "mares-mission-2-gauge-console-imperial",
+      "isPublic": true
     }
   ],
   "weights-belts": [
@@ -184,7 +200,8 @@
       "price": "9.99-73.99",
       "purchaseURL": "https://www.scuba.com/p-aqulwc1/sea-pearls-black-vinyl-coated-lead-weights-1-lb",
       "imageURL": "https://www.scuba.com/Image/Product/Large/AQULWC.JPG",
-      "identifier": "sea-pearls-black-vinyl-coated-lead-weights"
+      "identifier": "sea-pearls-black-vinyl-coated-lead-weights",
+      "isPublic": true
     }
   ]
 }
