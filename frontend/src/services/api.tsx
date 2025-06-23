@@ -6,7 +6,7 @@ const API_BASE_URL: string = 'http://localhost:8080/api';
 
 export async function fetchAllGear() {
   try {
-    const response = await axios.get(`${API_BASE_URL}/parts`, {
+    const response = await axios.get(`${API_BASE_URL}/gear`, {
       withCredentials: true,
     });
     return response.data;
