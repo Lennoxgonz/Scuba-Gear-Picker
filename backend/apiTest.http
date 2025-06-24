@@ -1,0 +1,8 @@
+POST https://8080-lennoxgonz-scubagearpic-n0mu3lc95cx.ws-us120.gitpod.io/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "tester",
+    "email": "test@test.com",
+    "password": "password"
+}
