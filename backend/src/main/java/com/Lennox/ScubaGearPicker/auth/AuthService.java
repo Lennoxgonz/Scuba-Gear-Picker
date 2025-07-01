@@ -1,5 +1,8 @@
 package com.Lennox.ScubaGearPicker.auth;
 
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -11,31 +14,39 @@ public class AuthService {
 
     private final AppUserRepository appUserRepository;
     private final PasswordEncoder passwordEncoder;
+    private final AuthenticationManager authenticationManager;
 
-    // Injecting  dependencies via the constructor
-    public AuthService(AppUserRepository appUserRepository, PasswordEncoder passwordEncoder) {
+    public AuthService(AppUserRepository appUserRepository, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager) {
         this.appUserRepository = appUserRepository;
         this.passwordEncoder = passwordEncoder;
+        this.authenticationManager = authenticationManager;
     }
 
     public void register(RegisterRequest request) {
-        // Check if username is taken
         if (appUserRepository.findByUsername(request.username()).isPresent()) {
             throw new IllegalStateException("Username already exists");
         }
 
-        // Check is email is already registered
         if (appUserRepository.findByEmail(request.email()).isPresent()) {
             throw new IllegalStateException("Email is already registered");
         }
-        // Create a new user and encode the password
         var user = new AppUser(
                 request.username(),
                 request.email(),
                 passwordEncoder.encode(request.password())
         );
 
-        // Save the new user to the database
         appUserRepository.save(user);
+    }
+    public String login(LoginRequest request) {
+        Authentication authentication = authenticationManager.authenticate(
+            new UsernamePasswordAuthenticationToken(
+                request.username(),
+                request.password()
+            )
+        );
+        
+        // for testing, need to be replaced with JWT generatin
+        return "User logged in successfully!";
     }
 }
