@@ -1,4 +1,4 @@
 package com.Lennox.ScubaGearPicker.auth;
 
-public record LoginRequest(String username, String password) {
+public record LogInRequest(String username, String password) {
 }

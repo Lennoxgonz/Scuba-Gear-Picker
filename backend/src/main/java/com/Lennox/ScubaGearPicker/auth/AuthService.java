@@ -16,13 +16,14 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
 
-    public AuthService(AppUserRepository appUserRepository, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager) {
+    public AuthService(AppUserRepository appUserRepository, PasswordEncoder passwordEncoder,
+            AuthenticationManager authenticationManager) {
         this.appUserRepository = appUserRepository;
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
     }
 
-    public void register(RegisterRequest request) {
+    public void signUp(SignUpRequest request) {
         if (appUserRepository.findByUsername(request.username()).isPresent()) {
             throw new IllegalStateException("Username already exists");
         }
@@ -33,19 +34,17 @@ public class AuthService {
         var user = new AppUser(
                 request.username(),
                 request.email(),
-                passwordEncoder.encode(request.password())
-        );
+                passwordEncoder.encode(request.password()));
 
         appUserRepository.save(user);
     }
-    public String login(LoginRequest request) {
+
+    public String logIn(LogInRequest request) {
         Authentication authentication = authenticationManager.authenticate(
-            new UsernamePasswordAuthenticationToken(
-                request.username(),
-                request.password()
-            )
-        );
-        
+                new UsernamePasswordAuthenticationToken(
+                        request.username(),
+                        request.password()));
+
         // for testing, need to be replaced with JWT generatin
         return "User logged in successfully!";
     }
