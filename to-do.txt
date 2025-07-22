@@ -1,2 +1,5 @@
 Add build total functionality
 Add gear sorting functionality
+
+
+sdk install java 21.0.1-amzn

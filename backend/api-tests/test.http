@@ -1,2 +1,12 @@
 ###
-GET https://8080-lennoxgonz-scubagearpic-n1mewptafig.ws-us116.gitpod.io/api/parts/category/bcd
+GET http://localhost:8080/api/parts/category/bcd
+
+###
+POST http://localhost:8080/api/auth/signup
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "test@example.com",
+  "password": "a-strong-password"
+}
