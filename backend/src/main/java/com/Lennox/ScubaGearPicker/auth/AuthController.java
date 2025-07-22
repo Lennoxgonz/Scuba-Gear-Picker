@@ -20,9 +20,9 @@ public class AuthController {
         return ResponseEntity.ok("User registered successfully!");
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<String> logIn(@RequestBody LogInRequest request) {
-        String message = authService.logIn(request);
+    @PostMapping("/signin")
+    public ResponseEntity<String> signIn(@RequestBody SignInRequest request) {
+        String message = authService.signIn(request);
         return ResponseEntity.ok(message);
 }
 }

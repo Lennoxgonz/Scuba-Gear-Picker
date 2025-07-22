@@ -39,7 +39,7 @@ public class AuthService {
         appUserRepository.save(user);
     }
 
-    public String logIn(LogInRequest request) {
+    public String signIn(SignInRequest request) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         request.username(),

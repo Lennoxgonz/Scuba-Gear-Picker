@@ -1,9 +1,0 @@
-services:
-  postgres:
-    image: 'postgres:17'
-    environment:
-      - 'POSTGRES_DB=mydatabase'
-      - 'POSTGRES_PASSWORD=postgres'
-      - 'POSTGRES_USER=myuser'
-    ports:
-      - '5432:5432'

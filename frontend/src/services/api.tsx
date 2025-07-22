@@ -1,9 +1,9 @@
 import axios from "axios";
 import { RegistrationData } from "../types/registrationData";
 
-//const API_BASE_URL: string = 'http://localhost:8080/api';
-const API_BASE_URL: string =
-  "https://8080-lennoxgonz-scubagearpic-n0mu3lc95cx.ws-us120.gitpod.io/api";
+const API_BASE_URL: string = 'http://localhost:8080/api';
+//const API_BASE_URL: string =
+//  "https://8080-lennoxgonz-scubagearpic-n0mu3lc95cx.ws-us120.gitpod.io/api";
 
 export async function fetchAllGear() {
   try {
