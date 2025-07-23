@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.Lennox.ScubaGearPicker.users.AppUser;
 import com.Lennox.ScubaGearPicker.users.AppUserRepository;
 
-import jakarta.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class AuthService {
