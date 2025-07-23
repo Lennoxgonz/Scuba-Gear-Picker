@@ -32,8 +32,8 @@ public class AuthService {
             throw new IllegalStateException("Email is already registered");
         }
         var user = new AppUser(
-                request.username(),
                 request.email(),
+                request.username(),
                 passwordEncoder.encode(request.password()));
 
         appUserRepository.save(user);
