@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import BuildCard from "./BuildCard";
-import { CategoryMapping } from "../types/categoryMapping";
+import { CategoryMapping } from "../types/CategoryMapping";
 import { useState } from "react";
 
 interface BuildCardGridProps {

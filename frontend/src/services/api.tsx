@@ -1,5 +1,6 @@
 import axios from "axios";
-import { RegistrationData } from "../types/registrationData";
+import { SignUpData } from "../types/SignUpData";
+import { SignInData } from "../types/SignInData";
 
 //const API_BASE_URL: string = 'http://localhost:8080/api';
 const API_BASE_URL: string =
@@ -30,11 +31,11 @@ export async function fetchGearByCategory(category: String) {
   }
 }
 
-export async function registerUser(registrationData: RegistrationData) {
+export async function signUpUser(signUpData: SignUpData) {
   try {
     const response = await axios.post(
       `${API_BASE_URL}/auth/signup`,
-      registrationData
+      signUpData
     );
     return response.data;
   } catch (error) {
@@ -44,3 +45,19 @@ export async function registerUser(registrationData: RegistrationData) {
     throw new Error("An unexpected error occurred during registration.");
   }
 }
+
+export async function signInUser(signInData: SignInData) {
+  try {
+    const response = await axios.post(
+      `${API_BASE_URL}/auth/signin`,
+      signInData
+    );
+    return response.data;
+  } catch (error) {
+    if (axios.isAxiosError(error) && error.response) {
+      throw new Error(error.response.data);
+    }
+    throw new Error("An unexpected error occurred during signin.");
+  }
+}
+

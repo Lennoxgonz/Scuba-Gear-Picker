@@ -1,12 +1,13 @@
 import { Col, Row, Container, Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { registerUser } from "../services/api";
+import { signUpUser } from "../services/api";
 import { useNavigate } from 'react-router-dom';
+import { SignUpData } from "../types/SignUpData";
 
 function SignUpPage() {
   const [validated, setValidated] = useState(false);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<SignUpData>({
     username: "",
     email: "",
     password: "",
@@ -34,7 +35,7 @@ function SignUpPage() {
 
     if (form.checkValidity() === true && doPasswordsMatch) {
       try {
-        const result = await registerUser(formData);
+        const result = await signUpUser(formData);
         console.log("Registration successful:", result);
         alert("Registration successful! You can now sign in.");
         navigate("/signin")
