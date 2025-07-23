@@ -33,3 +33,5 @@ lerna-debug.log*
 .env
 .env.*
 *.local
+
+!/.env.example

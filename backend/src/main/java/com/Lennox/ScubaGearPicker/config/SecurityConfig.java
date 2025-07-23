@@ -36,7 +36,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of(
-                "https://5173-lennoxgonz-scubagearpic-n0mu3lc95cx.ws-us120.gitpod.io",
+                "https://5173-lennoxgonz-scubagearpic-7ekuzl7v3mq.ws-us120.gitpod.io",
                 "http://localhost:5173"));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
