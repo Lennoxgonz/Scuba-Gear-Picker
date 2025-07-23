@@ -20,11 +20,11 @@ function SignInPage() {
       <Row className="justify-content-center">
         <Col xs={12} md={6} lg={4}>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
-            <Form.Group controlId="email" className="mb-3">
-              <Form.Label>Email</Form.Label>
-              <Form.Control required type="email" placeholder="Enter email" />
+            <Form.Group controlId="username" className="mb-3">
+              <Form.Label>Username</Form.Label>
+              <Form.Control required type="text" placeholder="Enter username" />
               <Form.Control.Feedback type="invalid">
-                Please enter a valid email.
+                Please enter a username.
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group controlId="password" className="mb-3">

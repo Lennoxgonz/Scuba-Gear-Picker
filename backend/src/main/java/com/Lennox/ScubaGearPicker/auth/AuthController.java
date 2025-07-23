@@ -1,5 +1,7 @@
 package com.Lennox.ScubaGearPicker.auth;
 
+import java.util.Map;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,14 +17,14 @@ public class AuthController {
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<String> signUp(@RequestBody SignUpRequest request) {
+    public ResponseEntity<Map<String, String>> signUp(@RequestBody SignUpRequest request) {
         authService.signUp(request);
-        return ResponseEntity.ok("User registered successfully!");
+        return ResponseEntity.ok(Map.of("message", "User registered successfully!"));
     }
 
     @PostMapping("/signin")
-    public ResponseEntity<String> signIn(@RequestBody SignInRequest request) {
+    public ResponseEntity<Map<String, String>> signIn(@RequestBody SignInRequest request) {
         String message = authService.signIn(request);
-        return ResponseEntity.ok(message);
+        return ResponseEntity.ok(Map.of("message", message));
 }
 }

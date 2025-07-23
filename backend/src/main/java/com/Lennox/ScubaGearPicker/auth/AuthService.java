@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.Lennox.ScubaGearPicker.users.AppUser;
 import com.Lennox.ScubaGearPicker.users.AppUserRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class AuthService {
 
@@ -22,7 +24,7 @@ public class AuthService {
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
     }
-
+    @Transactional
     public void signUp(SignUpRequest request) {
         if (appUserRepository.findByUsername(request.username()).isPresent()) {
             throw new IllegalStateException("Username already exists");

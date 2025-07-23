@@ -33,7 +33,7 @@ export async function fetchGearByCategory(category: String) {
 export async function registerUser(registrationData: RegistrationData) {
   try {
     const response = await axios.post(
-      `${API_BASE_URL}/auth/register`,
+      `${API_BASE_URL}/auth/signup`,
       registrationData
     );
     return response.data;
